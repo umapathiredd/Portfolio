@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Complete a Form</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font: 87.5% Arial, Helvetica, sans-serif;
+            width: 500px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 2px solid #4A63C6;
+        }
+        h1 {
+            color: #4A63C6;
+            font-size: 140%;
+        }
+        h2 {
+            font-size: 115%;
+            padding: .5em 0;
+        }
+        label {
+            color: #4A63C6;
+            float: left;
+            width: 8em;
+            font-weight: bold;
+            text-align: left;
+        }
+        input {
+            width: 15em;
+            margin: 0 0 .5em 1em;
+        }
+        /* Added CSS for checkboxes and required fields */
+        #button, #reset {
+            width: 7em;
+            background-color: #A9EEF5;
+            box-shadow: 2px 2px 0 #6AB0E2;
+        }
+        #button {
+            margin-left: 9em;
+        }
+        input[type="checkbox"] {
+            width: auto;
+            margin: 4px;
+        }
+        /* Remove box shadow from required and invalid fields */
+        input:required,
+        input:invalid {
+            box-shadow: none;
+        }
+		hr {
+  			border-top: 2px dashed #b6d8f1;
+		}
+    </style>
+</head>
+
+<body>
+<h1>Please complete our survey</h1>
+<br><hr>
+<form name="myform" action="survey_data.html" method="get"> <!-- Changed method to "get" -->
+    
+    <h2>Contact information</h2>
+    <label for="email">Email address:</label>
+    <input type="email" name="email" id="email" autofocus required><br> <!-- Added autofocus and required attributes -->
+    <label for="firstname">First name:</label>
+    <input type="text" name="firstname" id="firstname" required><br> <!-- Added required attribute -->
+    <label for="lastname">Last name:</label>
+    <input type="text" name="lastname" id="lastname" required><br> <!-- Added required attribute -->
+    
+	<br><hr>
+    <h2>Geographic information</h2> <!-- Added heading -->
+    <label for="state">State:</label>
+    <input type="text" name="state" id="state" required placeholder="Two Characters" pattern="[A-Za-z]{2}"><br> <!-- Added required and placeholder attributes -->
+    <label for="zipcode">Zip code:</label>
+    <input type="text" name="zipcode" id="zipcode" required placeholder="Five Digits" pattern="\d{5}"><br> <!-- Added required and placeholder attributes -->
+    
+	<br><hr>
+    <h2>How did you hear about us</h2> <!-- Added heading -->
+    <input type="checkbox" name="hearus" value="Web Search"><label>Web Search</label><br>
+    <input type="checkbox" name="hearus" value="Facebook"><label>Facebook</label><br>
+    <input type="checkbox" name="hearus" value="Twitter"><label>Twitter</label><br>
+	<input type="checkbox" name="hearus" value="Email Message"><label>Email Message</label><br>
+
+	<br><hr>
+	<h2>Thank you for taking our survey!</h2>
+    <input type="submit" name="button" id="button" value="Submit">
+    <input type="reset" name="reset" id="reset"> 
+</form>
+</body>
+</html>

@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    margin: 0 auto;
+    padding: 10px 20px;
+    width: 600px;
+    border: 3px solid rgb(126, 3, 3);
+    border-radius: 5px;
+}
+h1 {
+	color: rgb(126, 3, 3);
+	margin-top: 0;
+	margin-bottom: .5em;
+}
+h2 {
+	color: rgb(126, 3, 3);
+	font-size: 120%;
+	padding: 0;
+	margin-bottom: .5em;
+}
+main {
+    padding: 1em 2em;
+}
+label {
+	float: left;
+    width: 3em;
+    text-align: right;
+}
+input {
+    margin-left: 1em;
+    margin-bottom: .5em;
+}
+p {
+	margin: 0;
+}
+td {
+	width: 10em;
+}
+
+hr{
+    border: 1px solid rgb(126, 3, 3);
+}
+
+input[type="button"] {
+    background-color: rgb(126, 4, 4);
+    color: white;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.error {
+    color: red;
+}
+
+/* Add this style to change the text color of the "Name" and "Score" headings to red */
+th {
+    color: rgb(126, 3, 3);
+}

@@ -1,0 +1,68 @@
+body{
+    background-color: #c6fbfb;
+    font-family:'Josefin Sans', sans-serif;
+    font-size: 18px;
+}
+
+.name {
+  color: green;
+}
+
+
+.container {
+    display: flex;
+    align-items: center; /* Center vertically */
+  }
+  
+  .image {
+    flex: 1; /* Take up remaining space */
+    text-align: right; /* Align image to the right */
+    padding: 20px; /* Add some spacing between text and image */
+    padding-left: 15% ;
+  }
+  
+  .text {
+    flex: 1; /* Take up remaining space */
+    text-align: left; /* Align text to the left */
+    margin-right: 15%;
+  }
+  
+footer{
+  text-align: center;
+}
+
+
+.boxed-section {
+  background-color: #b8faed;
+  padding: 10px;
+  border: 2px solid #333;
+  text-align: center;
+  font-size: 18px;
+}
+
+.boxed-section h2 {
+  font-size: 24px;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+
+.boxed-section a {
+  text-decoration: none; /* Remove underline */
+  color: #333;
+  padding-top: 10px;
+}
+
+
+.project{
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+.project img{
+  border-radius: 5px;
+}
+
+.end{
+  font-style: italic;
+}
+
